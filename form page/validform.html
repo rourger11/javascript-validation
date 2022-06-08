@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div class="login_page">
+
+        <form action="" name="myForm" onsubmit="return validateForm()">
+            <h1>Login Page</h1>
+            <div class="details">
+
+                <h4>*Name:</h4>
+                <div>
+                    <input type="text" placeholder="Enter your name" class="box" name="user" id="uname"><br>
+                    <span id="unameerror"></span>
+                </div>
+
+                <h4>*Mobile Number:</h4>
+                <input type="text" placeholder="Enter your number" class="box" name="num" id="number"><br>
+                <span id="numerror"></span>
+
+                <h4>*E-mail Id:</h4>
+                <input type="text" placeholder="Enter your email-id" class="box"  name="mail" id="email"><br>
+                <span id="eerror"></span>
+
+                <h4>*Password:</h4>
+                <input type="password" placeholder="Enter your password" class="box" name="pass" id="passwrd"><br>
+                <span id="passerror"></span>
+
+                <div class="send">
+                    <input type="submit"  value="Log in" id="button" onclick="data()">
+                </div>
+        </form>
+    </div> 
+    <script src="./valid.js"></script>
+
+</body>
+
+</html>
